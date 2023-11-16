@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Referências Bibliográficas - Triatlo nas Olimpíadas</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="..\Estilos-CSS\estilo.css">
+</head>
+<body>
+	<div class="container">
+		<a href="01 Pagina Inicial.html" title="pagina inicial" rel="noopener">
+			<span class="icon"><i class="fas fa-home"></i></span>
+		</a>		
+		<a href="02 Triatletas.html" target="_blank" title="Triatletas" rel="noopener">Triatletas</a>		
+		<a href="05 Resultados.html" target="_blank" title="Resultados" rel="noopener">Resultados</a>
+		<a href="03 Historia.html" target="_blank" title="História" rel="noopener">História</a>
+		<a href="07 Primeiro Medalhista.html" target="_blank" title="Primeiro Medalhista" rel="noopener">Primeiro Medalhista</a>		
+		<a href="06 Referencias bibliograficas.html" target="_blank" title="Referências Bibliográficas" rel="noopener">Referências Bibliográficas</a>
+		<a class="logo" href="01 Pagina Inicial.html" target="_blank" title="Triatlo Nas Olimpíadas" rel="noopener">Triatlo Nas Olimpíadas</a>
+	</div>
+
+	<div class="main-content">
+		<h1>Referências Bibliográficas</h1>
+		<ul>
+			<li>Smith, J. (2020). Triathlon: A Complete Guide. Publisher XYZ.</li>
+			<li>Johnson, A. (2019). The History of Triathlon: From Origins to Modern-Day. Publisher ABC.</li>
+			<li>Doe, R. (2018). Triathlon Training: Tips and Techniques for Success. Publisher 123.</li>
+            <li>Imagem: Mulher nadando no triatlo. Disponível em: <a href="https://st.depositphotos.com/1474433/1878/i/450/depositphotos_18781691-stock-photo-women-doing-triathlon.jpg">https://st.depositphotos.com/1474433/1878/i/450/depositphotos_18781691-stock-photo-women-doing-triathlon.jpg</a></li>
+            <li>Imagem: Vencedores do triatlo. Disponível em: <a href="https://www.mundotri.com.br/wp-content/uploads/2021/07/tokyo2020og_084734_wags2719-scaled.jpg">https://www.mundotri.com.br/wp-content/uploads/2021/07/tokyo2020og_084734_wags2719-scaled.jpg</a></li>
+            <li>Imagem: Natação no triatlo. Disponível em: <a href="https://www.olimpiadatododia.com.br/wp-content/uploads/2020/08/triatlo-tiszaujvaros-elite-men-web-msj-023.jpg">https://www.olimpiadatododia.com.br/wp-content/uploads/2020/08/triatlo-tiszaujvaros-elite-men-web-msj-023.jpg</a></li>
+            <li>Imagem: Competição de triatlo em Londres. Disponível em: <a href="https://downloads-mundotri.s3.amazonaws.com/wp-content/uploads/2014/06/london-menwomen-web-msj-0171-600x450.jpg">https://downloads-mundotri.s3.amazonaws.com/wp-content/uploads/2014/06/london-menwomen-web-msj-0171-600x450.jpg</a></li>
+            <li>Imagem: Triatlo nas Olimpíadas de Tóquio 2020. Disponível em: <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlxFwOMcxlxbvkDblMuS4zjWz6u25ZUYS6OLeHDi4xOA&s">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlxFwOMcxlxbvkDblMuS4zjWz6u25ZUYS6OLeHDi4xOA&s</a></li>
+            <li>Vídeo: Triatlo Feminino - Olimpíadas de Tóquio 2020. Disponível em: <a href="https://www.youtube.com/embed/3fH1i3AgpZc"> https://www.youtube.com/embed/3fH1i3AgpZc</a></li>
+			<li>Imagem: Primeiro medalhista olímpico da modalidade. Disponível em: <a href="https://www.gettyimages.com.br/fotos/simon-whitfield">https://www.gettyimages.com.br/fotos/simon-whitfield</a></li>
+		</ul>
+	</div>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			let links = document.querySelectorAll('.container a');
+
+			links.forEach(function (link) {
+				link.addEventListener('click', function (event) {
+					event.preventDefault();
+					let url = this.getAttribute('href');
+					if (url) {
+						window.location.href = url;
+					}
+				});
+			});
+
+			let slideIndex = 0;
+			showSlides();
+
+			function showSlides() {
+				let slides = document.getElementsByClassName("carousel-slide");
+				for (let i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+				slideIndex++;
+				if (slideIndex > slides.length) {
+					slideIndex = 1;
+				}
+				slides[slideIndex - 1].style.display = "block";
+				setTimeout(showSlides, 3000);
+			}
+		});
+	</script>
+
+	<footer>
+		<p>Triatlo nas Olimpíadas &copy; 2023</p>
+	</footer>
+</body>
+</html>

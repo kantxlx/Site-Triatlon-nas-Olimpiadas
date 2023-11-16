@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Triatlo nas Olimpíadas</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="..\Estilos-CSS\estilo.css">
+</head>
+<body>
+	<div class="container">
+		<a href="01 Pagina Inicial.html"  title="pagina inicial" rel="noopener">
+			<span class="icon"><i class="fas fa-home"></i></span>
+		</a>		
+		<a href="02 Triatletas.html" target="_blank" title="Triatletas" rel="noopener">Triatletas</a>		
+		<a href="05 Resultados.html" target="_blank" title="Resultados" rel="noopener">Resultados</a>
+		<a href="03 Historia.html" target="_blank" title="História" rel="noopener">História</a>
+		<a href="07 Primeiro Medalhista.html" target="_blank" title="Primeiro Medalhista" rel="noopener">Primeiro Medalhista</a>		
+		<a href="06 Referencias bibliograficas.html" target="_blank" title="Referências Bibliográficas" rel="noopener">Referências Bibliográficas</a>
+		<a class="logo" href="01 Pagina Inicial.html" target="_blank" title="Triatlo Nas Olimpíadas" rel="noopener">Triatlo Nas Olimpíadas</a>
+	</div>
+	<div class="main-content">
+        <div>
+		<h1>Triatletas</h1>
+		    <p>Não há uma rotina de treinos igual para todos os triatletas, pois é necessário ter em mente que ela pode variar de acordo com diversos fatores. Por exemplo, se o(a) atleta tem ou não filhos, se recebe ou não patrocínio, se tem uma profissão que não a de competir, se é amador ou profissional, dentre outras.
+            No entanto, o que é regra na rotina de todos os praticantes da modalidade, é que trata-se de algo que requer treino, disciplina e muita dedicação.
+            A título de exemplo, podemos tomar uma semana de treinos “normal” para muitos triatletas profissionais. Ao final de uma semana inteira, pois são nos fins de semanas que muitos dos treinos mais importantes acontecem, são pedalados aproximadamente 150 km, nadados 15 km e corridos de 15 a 20 km.
+            Geralmente, são realizados treinos de duas modalidades por dia (corrida e natação, corrida e ciclismo, natação e ciclismo, etc.) para variar os treinos e evitar a extrema fadiga muscular.
+            Como o triatlo também envolve estratégia na troca de roupas e equipamentos e na distribuição do fôlego durante o percurso, com uma periodicidade determinada os atletas treinam o percurso inteiro a fim de fazer ajustes em suas estratégias.
+            Com uma rotina cheia, toda a agenda de um triatleta deve ser regrada, ou seja, e necessário definir e cumprir horários para absolutamente tudo. Além disso, baladas aos fins de semana, consumo excessivo de bebida alcoólica e alimentação desregrada são praticamente proibidos para atletas profissionais ou que querem se tornar profissionais.           
+            Além desses impedimentos relacionados a agenda e as atividades sociais e recreativas, as lesões podem representar grandes dificuldades na vida de qualquer triatleta, sendo o acompanhamento medico de uma equipe multidisciplinar essencial para garantir que elas não ocorram, e quando ocorram sejam tratadas para que o quadro não se agrave.
+            Por isso muito atletas tem em quadro de treinamento musculação e/ou treinamento funcional para aprimorar o rendimento e prevenir lesões.</p>
+        
+        <img class="image" src="https://st.depositphotos.com/1474433/1878/i/450/depositphotos_18781691-stock-photo-women-doing-triathlon.jpg" alt="imagem natação triatlo"> 
+       
+        </div>
+        <div>
+            <h1>Triatletas em destaque</h1>
+            <p>No Brasil, existem três principais atletas na atualidade que têm recebido destaque: Diogo Sclebin, Reinaldo Colucci e Pâmella Oliveira. 
+            Não poderíamos deixar de mencionar Fernanda Keller, que conseguiu conquistar seis vezes a medalhe de bronze no IronMan, uma das provas mais importantes do triatlo, realizada anualmente no Havaí. Alem disso, e a única atleta do esporte e competir a mesma prova 22 vezes consecutivas.
+            Dentre os melhores atletas estrangeiros, temos nomes como Alistair Brownlee, Javier Gomez, Craig Alexander e Andreas Raelert, este ultimo mundialmente reconhecido por ser um dos melhores competidores em provas de longa distância, a exemplo do Ultraman.</p>
+        <img class="image" src="https://www.mundotri.com.br/wp-content/uploads/2021/07/tokyo2020og_084734_wags2719-scaled.jpg" alt="vencedores triatlo"> 
+        </div>
+        
+	</div>   
+	
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			let links = document.querySelectorAll('.container a');
+
+			links.forEach(function (link) {
+				link.addEventListener('click', function (event) {
+					event.preventDefault();
+					let url = this.getAttribute('href');
+					if (url) {
+						window.location.href = url;
+					}
+				});
+			});
+
+			let slideIndex = 0;
+			showSlides();
+
+			function showSlides() {
+				let slides = document.getElementsByClassName("carousel-slide");
+				for (let i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+				slideIndex++;
+				if (slideIndex > slides.length) {
+					slideIndex = 1;
+				}
+				slides[slideIndex - 1].style.display = "block";
+				setTimeout(showSlides, 3000);
+			}
+		});
+	</script>
+
+	<footer>
+		<p>Triatlo nas Olimpíadas &copy; 2023</p>
+	</footer>
+</body>
+</html>

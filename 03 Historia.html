@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Triatlo nas Olimpíadas</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="..\Estilos-CSS\estilo.css">
+</head>
+<body>
+	<div class="container">
+		<a href="01 Pagina Inicial.html" title="pagina inicial" rel="noopener">
+			<span class="icon"><i class="fas fa-home"></i></span>
+		</a>		
+		<a href="02 Triatletas.html" target="_blank" title="Triatletas" rel="noopener">Triatletas</a>		
+		<a href="05 Resultados.html" target="_blank" title="Resultados" rel="noopener">Resultados</a>
+		<a href="03 Historia.html" target="_blank" title="História" rel="noopener">História</a>
+		<a href="07 Primeiro Medalhista.html" target="_blank" title="Primeiro Medalhista" rel="noopener">Primeiro Medalhista</a>		
+		<a href="06 Referencias bibliograficas.html" target="_blank" title="Referências Bibliográficas" rel="noopener">Referências Bibliográficas</a>
+		<a class="logo" href="01 Pagina Inicial.html" target="_blank" title="Triatlo Nas Olimpíadas" rel="noopener">Triatlo Nas Olimpíadas</a>
+	</div>
+	<div class="main-content">
+        <div class="div02">
+		<h1>História</h1>
+		<p>O triatlo surgiu em San Diego, nos Estados Unidos, em 1974, em um clube de atletismo que, ao dar férias aos seus atletas, passava planilha de treinamentos para que eles “descansassem” um pouco de treinos e competições. Ao voltar das férias, os treinadores faziam testes com seus atletas para saberem se realmente eles tinham cumprido a planilha.</p>
+            <img class="image" src="https://www.olimpiadatododia.com.br/wp-content/uploads/2020/08/triatlo-tiszaujvaros-elite-men-web-msj-023.jpg" alt="imagem natação triatlo"> 
+            <p>Esses atletas deveriam nadar 500m na piscina do clube, pedalar 12km e correr 5km. Os atletas gostaram tanto da brincadeira que pediram para os treinadores repetirem a dose nas férias seguintes em fevereiro de 1978 foi realizado o 1º Iron Man do Havaí, com participação de 15 atletas, vencido por um motorista de táxi chamado John Haley. O evento deu tão certo que, desde então, anualmente (sempre em outubro), mais de 3.000 atletas tentam superar esse desafio no Havaí o triatlo estreou no programa olímpico em Sydney 2000, já no formato atual de 1.500m de natação, 40km de ciclismo e 10km de corrida.</p>
+            <img class="image" src="https://downloads-mundotri.s3.amazonaws.com/wp-content/uploads/2014/06/london-menwomen-web-msj-0171-600x450.jpg">
+        </div>
+	</div>   
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			let links = document.querySelectorAll('.container a');
+
+			links.forEach(function (link) {
+				link.addEventListener('click', function (event) {
+					event.preventDefault();
+					let url = this.getAttribute('href');
+					if (url) {
+						window.location.href = url;
+					}
+				});
+			});
+
+			let slideIndex = 0;
+			showSlides();
+
+			function showSlides() {
+				let slides = document.getElementsByClassName("carousel-slide");
+				for (let i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+				slideIndex++;
+				if (slideIndex > slides.length) {
+					slideIndex = 1;
+				}
+				slides[slideIndex - 1].style.display = "block";
+				setTimeout(showSlides, 3000);
+			}
+		});
+	</script>
+
+	<footer>
+		<p>Triatlo nas Olimpíadas &copy; 2023</p>
+	</footer>
+</body>
+</html>

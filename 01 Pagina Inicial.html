@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Triatlo nas Olimpíadas</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="..\Estilos-CSS\estilo.css">
+</head>
+<body>
+	<div class="container">
+		<a href="01 Pagina Inicial.html" title="pagina inicial" rel="noopener">
+			<span class="icon"><i class="fas fa-home"></i></span>
+		</a>		
+		<a href="02 Triatletas.html" target="_blank" title="Triatletas" rel="noopener">Triatletas</a>		
+		<a href="05 Resultados.html" target="_blank" title="Resultados" rel="noopener">Resultados</a>
+		<a href="03 Historia.html" target="_blank" title="História" rel="noopener">História</a>
+		<a href="07 Primeiro Medalhista.html" target="_blank" title="Primeiro Medalhista" rel="noopener">Primeiro Medalhista</a>		
+		<a href="06 Referencias bibliograficas.html" target="_blank" title="Referências Bibliográficas" rel="noopener">Referências Bibliográficas</a>
+		<a class="logo" href="01 Pagina Inicial.html" target="_blank" title="Triatlo Nas Olimpíadas" rel="noopener">Triatlo Nas Olimpíadas</a>
+	</div>
+
+	<div class="main-content">
+		<h1>Triatlo nas Olimpíadas de Tóquio 2020</h1>
+		<img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlxFwOMcxlxbvkDblMuS4zjWz6u25ZUYS6OLeHDi4xOA&s" alt="Triatlo nas Olimpíadas de Tóquio 2020">
+		<p>O triatlo é um esporte olímpico que consiste em três modalidades: natação, ciclismo e corrida. Os atletas competem em todas as três modalidades em sequência, com o tempo total sendo usado para determinar o vencedor.</p>
+
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/3fH1i3AgpZc" title="Triatlo Feminino - Olimpíadas de Tóquio 2020" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <p>O triatlo masculino e feminino nos Jogos Olímpicos de Tóquio 2020 aconteceu no Odaiba Marine Park, em Tóquio, Japão. Os atletas tiveram que nadar 1,5 km no mar, pedalar 40 km em um circuito plano e correr 10 km em um circuito fechado.</p>
+
+        <h2>Resultados</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Colocação</th>
+					<th>Atleta</th>
+					<th>País</th>
+					<th>Tempo</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Flora Duffy</td>
+					<td>Bermudas</td>
+					<td>1:55:36</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Georgia Taylor-Brown</td>
+					<td>Reino Unido</td>
+					<td>1:56:50</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Katie Zaferes</td>
+					<td>Estados Unidos</td>
+					<td>1:57:03</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="carousel">
+		<div class="carousel-slide">
+			<img class="carousel-image img-responsive" src="https://i.pinimg.com/564x/34/ce/30/34ce30e0898c89ddb53b5e6436ba145d.jpg" alt="Triatlo Olímpico - Imagem 1">
+			<div class="carousel-caption">
+				<p>Simbolo do Triathlon Olímpico</p>
+			</div>
+		</div>
+		<div class="carousel-slide">
+			<img class="carousel-image img-responsive" src="https://i.pinimg.com/564x/f2/76/a7/f276a72d2ab80fa6c85a368d6e2bcb98.jpg" alt="Triatlo Olímpico - Imagem 2">
+			<div class="carousel-caption">
+				<p>Largada</p>
+			</div>
+		</div>
+		<div class="carousel-slide">
+			<img class="carousel-image img-responsive" src="https://i.pinimg.com/564x/c9/a0/ca/c9a0cac26ed6502dac50a492214bad4b.jpg" alt="Triatlo Olímpico - Imagem 3">
+			<div class="carousel-caption">
+				<p>Podio das Olimpíadas Rio 2016</p>
+			</div>
+		</div>
+		<div class="carousel-slide">
+			<img class="carousel-image img-responsive" src="https://i.pinimg.com/564x/64/62/26/646226b368c212c3c6547d3f5a4d343d.jpg" alt="Triatlo Olímpico - Imagem 4">
+			<div class="carousel-caption">
+				<p>Circuito de bike</p>
+			</div>
+		</div>
+		<div class="carousel-slide">
+			<img class="carousel-image img-responsive" src="https://i.pinimg.com/564x/b8/34/50/b834508f4a26bf057fafa186d9f5f448.jpg" alt="Triatlo Olímpico - Imagem 5">
+			<div class="carousel-caption">
+				<p>Maratona</p>
+			</div>
+		</div>
+		<div class="carousel-slide">
+			<img class="carousel-image img-responsive" src="https://i.pinimg.com/564x/a4/d8/d5/a4d8d5f26bca68a44c2e92d5928df525.jpg" alt="Triatlo Olímpico - Imagem 6">
+			<div class="carousel-caption">
+				<p>Maratona aquatica</p>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			let links = document.querySelectorAll('.container a');
+
+			links.forEach(function (link) {
+				link.addEventListener('click', function (event) {
+					event.preventDefault();
+					let url = this.getAttribute('href');
+					if (url) {
+						window.location.href = url;
+					}
+				});
+			});
+
+			let slideIndex = 0;
+			showSlides();
+
+			function showSlides() {
+				let slides = document.getElementsByClassName("carousel-slide");
+				for (let i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+				slideIndex++;
+				if (slideIndex > slides.length) {
+					slideIndex = 1;
+				}
+				slides[slideIndex - 1].style.display = "block";
+				setTimeout(showSlides, 3000);
+			}
+		});
+	</script>
+
+	<footer>
+		<p>Triatlo nas Olimpíadas &copy; 2023</p>
+	</footer>
+</body>
+</html>

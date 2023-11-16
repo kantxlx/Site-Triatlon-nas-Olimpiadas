@@ -1,0 +1,247 @@
+/* Estilos para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+}
+/* Estilos para a barra de navegação */
+nav {
+    background-color: #000;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+nav a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 1em;
+}
+/* Estilos para o logotipo */
+.logo {
+    font-size: 2em;
+    color: #fff;
+    text-decoration: none;
+}
+/* Estilos para a seção principal */
+main {
+    margin: 1em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+}
+h1 {
+    font-size: 3em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin: 0;
+}
+.image {
+    max-width: 100%;
+    height: auto;
+}
+.table {
+    margin: 1em;
+    border-collapse: collapse;
+    font-size: 1.2em;
+    width: 100%;
+}
+.table th,
+.table td {
+    padding: 0.5em;
+    border: 1px solid #000;
+    text-align: center;
+}
+.table th {
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+}
+iframe {
+    margin-top: 1em;
+    width: 100%;
+    height: 400px;
+}
+/* Estilos para o rodapé */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    margin-top: 1em;
+    clear: both;
+}
+.div02 {
+    text-align: center;
+}
+table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.container a {
+    margin-right: 5%;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.container .logo {
+    font-weight: bold;
+}
+
+.main-content {
+    margin-top: 90px;
+    padding: 20px;
+}
+
+.main-content h1 {
+    text-align: center;
+}
+
+.main-content img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.main-content p {
+    text-align: justify;
+}
+
+    table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: #000;
+}
+
+table th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+/* modelo carrosel */
+
+.carousel {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 500px;
+		}
+
+		.carousel-image {
+			width: 300px;
+			height: auto;
+			object-fit: cover;
+		}
+
+		.carousel-caption {
+			text-align: center;
+			margin-top: 10px;
+		}
+        /* Para dispositivos com menos de 640px*/
+        @media screen and (max-width: 640px) {
+			.container {
+				flex-wrap: wrap;
+			}
+
+			.container a {
+				flex-basis: 50%;
+			}
+
+			.main-content {
+				padding: 10px;
+			}
+
+			.main-content .image {
+				max-width: 100%;
+				height: auto;
+			}
+
+			.main-content iframe {
+				max-width: 100%;
+				height: auto;
+			}
+
+			.main-content table {
+				font-size: 14px;
+			}
+
+			.carousel .carousel-image {
+				width: 100%;
+				height: auto;
+			}
+		}
+        .rounded-image {
+			border-radius: 50%;
+			max-width: 100%;
+			height: auto;
+		}
+		@media (max-width: 480px) {
+			/* Estilos específicos para dispositivos com menos de 480 pixels de largura */
+			.container a:not(.logo) {
+				display: none;
+			}
+			.main-content {
+				padding: 10px;
+			}
+		}
+        /*imagem com bordas arredondadas*/
+        .rounded-image {
+			border-radius: 50%;
+			max-width: 100%;
+			height: auto;
+        }

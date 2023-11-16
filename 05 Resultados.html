@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Triatlo nas Olimpíadas</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="..\Estilos-CSS\estilo.css">
+</head>
+<body>
+	<div class="container">
+		<a href="01 Pagina Inicial.html" title="pagina inicial" rel="noopener">
+			<span class="icon"><i class="fas fa-home"></i></span>
+		</a>		
+		<a href="02 Triatletas.html" target="_blank" title="Triatletas" rel="noopener">Triatletas</a>		
+		<a href="05 Resultados.html" target="_blank" title="Resultados" rel="noopener">Resultados</a>
+		<a href="03 Historia.html" target="_blank" title="História" rel="noopener">História</a>
+    <a href="07 Primeiro Medalhista.html" target="_blank" title="Primeiro Medalhista" rel="noopener">Primeiro Medalhista</a>		
+		<a href="06 Referencias bibliograficas.html" target="_blank" title="Referências Bibliográficas" rel="noopener">Referências Bibliográficas</a>
+		<a class="logo" href="01 Pagina Inicial.html" target="_blank" title="Triatlo Nas Olimpíadas" rel="noopener">Triatlo Nas Olimpíadas</a>
+	</div>
+  <div class="main-content">
+  <h1 class="div02">Ganhadores do Triatlo Olímpico</h1>
+  <table>
+    <tr>
+      <th>Ano</th>
+      <th>Ganhador</th>
+      <th>Local</th>
+    </tr>
+    <tr>
+      <td>2000</td>
+      <td>Simon Whitfield (CAN)</td>
+      <td>Sydney, Austrália</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>Hamish Carter (NZL)</td>
+      <td>Atenas, Grécia</td>
+    </tr>
+    <tr>
+      <td>2008</td>
+      <td>Jan Frodeno (GER)</td>
+      <td>Pequim, China</td>
+    </tr>
+    <tr>
+      <td>2012</td>
+      <td>Alistair Brownlee (GBR)</td>
+      <td>Londres, Reino Unido</td>
+    </tr>
+    <tr>
+      <td>2016</td>
+      <td>Alistair Brownlee (GBR)</td>
+      <td>Rio de Janeiro, Brasil</td>
+    </tr>
+    <tr>
+        <td>2020</td>
+        <td>Kristian Blummenfelt (NOR)</td>
+        <td>Tóquio, Japão</td>
+      </tr>  
+  </table>
+  </div>
+  
+  <script>
+		document.addEventListener("DOMContentLoaded", function () {
+			let links = document.querySelectorAll('.container a');
+
+			links.forEach(function (link) {
+				link.addEventListener('click', function (event) {
+					event.preventDefault();
+					let url = this.getAttribute('href');
+					if (url) {
+						window.location.href = url;
+					}
+				});
+			});
+
+			let slideIndex = 0;
+			showSlides();
+
+			function showSlides() {
+				let slides = document.getElementsByClassName("carousel-slide");
+				for (let i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+				slideIndex++;
+				if (slideIndex > slides.length) {
+					slideIndex = 1;
+				}
+				slides[slideIndex - 1].style.display = "block";
+				setTimeout(showSlides, 3000);
+			}
+		});
+	</script>
+
+  <footer>
+    <p>Triatlo nas Olimpíadas &copy; 2023</p>
+  </footer>
+</body>
+</html>
